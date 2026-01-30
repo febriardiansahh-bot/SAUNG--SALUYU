@@ -1,0 +1,52 @@
+:root {
+    --gacoan-black: #0c0c0c; /* Hitam pekat */
+    --gacoan-red: #fdb813;
+    --gacoan-yellow: #fdb813;
+}
+
+/* Memperbaiki Navbar supaya Hitam */
+.bg-gacoan { 
+    background-color: var(--gacoan-black) !important; 
+    border-bottom: 3px solid var(--gacoan-red); /* Garis bawah merah agar tegas */
+    padding: 15px 0;
+}
+
+/* Memastikan teks di dalam Navbar berwarna terang */
+.navbar-brand span.text-warning {
+    color: var(--gacoan-yellow) !important;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Memperbaiki logo supaya ga pecah/hilang */
+.logo-nav { 
+    height: 45px; 
+    width: auto; 
+    border: 2px solid var(--gacoan-yellow);
+    background-color: white; /* pake background putih di logo supaya terlihat di nav hitam */
+}
+
+/* Mengatur warna Body supaya ga terlalu putih polos */
+body { 
+    font-family: 'Poppins', sans-serif; 
+    background-color: #ffffff; 
+}
+
+/* Tambahan supaya si Card terlihat lebih rapi */
+.card-menu {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(10, 10, 10, 0.05);
+}
+.btn-tambah {
+    background-color: #ffb800 !important; /* Ganti warna di sini */
+    color: white;
+    font-weight: bold;
+}
+
+.btn-tambah:hover {
+    background-color: #e6a700; /* Warna saat kursor di atas tombol */
+}
